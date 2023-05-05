@@ -1,6 +1,6 @@
 import { action } from '../enums/action';
 
-export interface signedUrlInput {
+export default interface signedUrlInput {
   fileKey: string;
   bucketName: string;
   action: action;

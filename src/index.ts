@@ -7,12 +7,12 @@ import {
 } from '@aws-sdk/client-s3';
 import { fromEnv } from '@aws-sdk/credential-providers';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
-import { signedUrlInput } from './models/input';
+import signedUrlInput from './models/input';
 import { action } from './enums/action';
-import * as dotenv from 'dotenv'; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import * as dotenv from 'dotenv';
 dotenv.config();
 
-export async function signedUrl(input: signedUrlInput) {
+export default async function signedUrl(input: signedUrlInput) {
   let url = '';
   let command: GetObjectCommand | PutObjectCommand | undefined = undefined;
   try {

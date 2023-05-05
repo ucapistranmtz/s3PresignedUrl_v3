@@ -1,7 +1,7 @@
 import { action } from './enums/action';
-import { signedUrl } from './index';
+import signedUrl from './index';
 import * as dotenv from 'dotenv';
-import { signedUrlInput } from './models/input';
+import signedUrlInput from './models/input';
 dotenv.config();
 
 describe('test signedUrl', () => {
@@ -28,8 +28,7 @@ describe('test signedUrl', () => {
       expiresIn: 3600
     };
     const url = await signedUrl(input);
-    expect(url).not.toBe(undefined);
-    expect(url).not.toBe(undefined);
+    expect(url).not.toBe(undefined); 
     expect(url.includes('x-id=PutObject')).not.toBe(false);
   });
 });
