@@ -1,10 +1,9 @@
 {
   "name": "s3presignedurl_v3",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "get presigned URLs using AWS SDK V3 ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
