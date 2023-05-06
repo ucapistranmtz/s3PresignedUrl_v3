@@ -2,6 +2,17 @@
 Getting presigned URLs using AWS SDK version 3 and env variables
 
 
+You must have these environmen in your .env file 
+
+```
+ AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+ AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+ AWS_DEFAULT_REGION=us-west-2
+```
+
+then check the following examples 
+
+
 ## get presigned url to upload a file 
 ```typescript
   
