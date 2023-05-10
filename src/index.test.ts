@@ -1,4 +1,4 @@
-import { signedUrl, action, signedUrlInput } from './index';
+import { signedUrl, action, signedUrlInput } from './signedUrl';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
