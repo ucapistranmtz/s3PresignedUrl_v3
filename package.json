@@ -9,8 +9,7 @@
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "test": "jest"
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "files": [
     "dist",
@@ -35,6 +34,8 @@
   },
   "homepage": "https://github.com/ucapistranmtz/s3PresignedUrl_v3#readme",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.21.5",
+    "@jest/globals": "^29.5.0",
     "@types/jest": "^29.5.1",
     "@types/node": "^20.1.2",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
