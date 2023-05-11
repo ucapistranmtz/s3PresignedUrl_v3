@@ -13,9 +13,7 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
-      - name: Install dependencies and build 🔧
-        run: npm ci && npm run build
       - name: Publish package on NPM 📦
-        run: npm publish
+        run: npm publish --@ucapistranmtz:registry=https://npm.pkg.github.com/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
