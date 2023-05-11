@@ -1,10 +1,8 @@
 'use strict';
 
-import {
-  GetObjectCommand,
-  PutObjectCommand,
-  S3Client
-} from '@aws-sdk/client-s3';
+import { GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3';
+import { S3Client } from '@aws-sdk/client-s3';
+
 import { fromEnv } from '@aws-sdk/credential-providers';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 
