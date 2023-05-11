@@ -2,7 +2,7 @@
   "files": ["src/signedUrl.ts"],
   "compilerOptions": {
     "declaration": true,
-    "target": "ES6",
+    "target": "ES5",
     "module": "commonjs",
     "lib": ["es6"],
     "allowJs": true,
