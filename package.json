@@ -58,11 +58,5 @@
     "@babel/preset-env": "^7.21.5",
     "buymeacoffee.js": "^2.0.0",
     "dotenv": "^16.0.3"
-  },
-  "jest": {
-    "testMatch": [
-      "**/?(*.)+(spec|test).[t]s?(x)"
-    ],
-    "verbose": true
   }
 }
