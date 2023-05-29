@@ -9,6 +9,13 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+      day: "sunday"
+      time: "09:00"
+      timezone: "US/Chicago"
           # Add assignees
     assignees:
       - "ucapistranmtz"
+    versioning-strategy: increase-if-necessary
+    labels:
+      - "npm"
+      - "dependencies"
