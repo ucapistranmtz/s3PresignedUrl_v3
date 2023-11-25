@@ -36,7 +36,7 @@ put()
 ```
 
  
- ## get presigned url to dowload a file 
+ ## get presigned url to download a file 
  
  ```typescript
   
